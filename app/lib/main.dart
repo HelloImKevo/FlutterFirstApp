@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'gradient_container.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,29 +20,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text(getTitle()),
         ),
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 94, 185, 245),
-                Color.fromARGB(255, 235, 242, 249)
-              ],
-            ),
-          ),
-          child: const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Welcome to Groovy POS',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                  textScaleFactor: 1.4,
-                ),
-                Text('It\'s time to process payments!'),
-              ],
-            ),
-          ),
-        ),
+        body: const GradientContainer(),
       ),
     );
   }
