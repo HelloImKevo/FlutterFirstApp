@@ -20,7 +20,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text(getTitle()),
         ),
-        body: const GradientContainer(),
+        body: const GradientContainer(
+          Color.fromARGB(255, 94, 185, 245),
+          Color.fromARGB(255, 235, 242, 249),
+        ),
       ),
     );
   }

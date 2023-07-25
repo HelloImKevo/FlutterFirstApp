@@ -14,7 +14,7 @@ class BodyText extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.bold),
             textScaleFactor: 1.4,
           ),
-          Text('It\'s time to process payments!'),
+          Text('It\'s time to roll the dice!'),
         ],
       ),
     );
